@@ -1,0 +1,20 @@
+{
+  "name": "hono-fs-router",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "peerDependencies": {
+    "hono": "^4.7.4",
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "bun run build.ts && tsc"
+  }
+}

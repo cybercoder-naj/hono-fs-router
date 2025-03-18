@@ -1,0 +1,14 @@
+{
+  "name": "@hono-fs-router/monorepo",
+  "version": "0.0.0",
+  "workspaces": ["core", "sample"],
+  "scripts": {
+    "build": "bun run --cwd core build",
+    "dev": "bun run --cwd sample dev",
+    "format": "bunx biome check --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "latest"
+  }
+}
