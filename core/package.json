@@ -1,5 +1,9 @@
 {
   "name": "hono-fs-router",
+  "version": "0.0.1",
+  "description": "A file-based API router for Hono.",
+  "license": "MIT",
+  "author": "Nishant Aanjaney Jalan",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,5 +20,16 @@
   },
   "scripts": {
     "build": "bun run build.ts && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cybercoder-naj/hono-fs-router"
+  },
+  "keywords": ["hono", "router", "api", "file-based", "server"],
+  "bugs": {
+    "url": "https://github.com/cybercoder-naj/hono-fs-router/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
