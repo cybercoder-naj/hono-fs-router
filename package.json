@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "workspaces": ["core", "sample"],
   "scripts": {
-    "build": "bun run --cwd core build",
+    "build": "bun run --cwd core build && bun install --cwd sample",
     "dev": "bun run --cwd sample dev",
     "format": "bunx biome check --write ."
   },

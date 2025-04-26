@@ -1,4 +1,1 @@
-export type Route = {
-  path: string;
-  method: string; // TODO: use enum or unions
-};
+export type { Route } from './routes';
