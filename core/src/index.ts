@@ -1,2 +1,1 @@
-export * from './fsRouter';
-export type * from './types';
+export { fsRouter } from './fsRouter';

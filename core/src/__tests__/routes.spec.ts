@@ -4,14 +4,14 @@ import { routeTransformer } from '../routes';
 describe('routeTransformer', () => {
   test('to GET /users for users.get.ts', async () => {
     expect(routeTransformer('users.get.ts')).resolves.toEqual({
-      path: 'users',
+      path: '/users',
       method: 'get',
     });
   });
 
   test('to ALL /users for users.ts', async () => {
     expect(routeTransformer('users.ts')).resolves.toEqual({
-      path: 'users',
+      path: '/users',
       method: 'all',
     });
   });
@@ -20,6 +20,13 @@ describe('routeTransformer', () => {
     expect(routeTransformer('index.get.ts')).resolves.toEqual({
       path: '/',
       method: 'get',
+    });
+  });
+
+  test('to POST /user for user.POST.ts', async () => {
+    expect(routeTransformer('user.POST.ts')).resolves.toEqual({
+      path: '/user',
+      method: 'post',
     });
   });
 
